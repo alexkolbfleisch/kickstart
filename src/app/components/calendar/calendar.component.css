@@ -1,0 +1,14 @@
+
+.event-title{
+    font-size: 14px;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    width: fit-content !important;
+    padding: 5px;
+    border: 1.5px solid transparent;
+}
+.test {
+    width: 100%;
+}
