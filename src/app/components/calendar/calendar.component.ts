@@ -27,8 +27,6 @@ export class CalendarComponent implements OnInit {
 
   obj = {name: "test", id: 1, trainer: "Lucas"};
    
-  
-
   constructor() { }
 
   ngOnInit(): void {

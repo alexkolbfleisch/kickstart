@@ -3,7 +3,6 @@
 
 
 <div class="row text-center">
-
     <div class="col-md-4">
         <div class="btn-group">
             <div class="btn btn-primary" mwlCalendarPreviousView [view]="view" [(viewDate)]="viewDate">
@@ -56,7 +55,7 @@
   
   </ng-template>
 
-<div [ngSwitch]="view" class="mt-5 test">
+<div [ngSwitch]="view" class="mt-5">
 
     <mwl-calendar-month-view (dayClicked)="setViewDate($event.day.date); setView(CalendarView.Day)" *ngSwitchCase="CalendarView.Month" [viewDate]="viewDate" [events]="events" [cellTemplate]="customCellTemplate">
     </mwl-calendar-month-view>
