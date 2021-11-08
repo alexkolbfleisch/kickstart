@@ -1,9 +1,17 @@
+<div id="buttons-container">
+    <div id="buttons">
+        <div *ngFor="let topic of _topics, let i = index, let even = even">
+            <p *ngIf="even" (click)="fillProgress(i)">{{topic}}</p>
+        </div>
+    </div>
+</div>
+
 <p id="progress"><ngb-progressbar  type="primary" [value]="_value" [max]="_numTopics"></ngb-progressbar></p>
 
 <div id="buttons-container">
     <div id="buttons">
-        <div *ngFor="let topic of _topics, let i = index">
-            <p (click)="fillProgress(i)">{{topic}}</p>
+        <div *ngFor="let topic of _topics, let i = index, let odd = odd">
+            <p *ngIf="odd" (click)="fillProgress(i)">{{topic}}</p>
         </div>
     </div>
 </div>
