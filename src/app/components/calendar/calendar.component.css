@@ -10,5 +10,5 @@
     border: 1.5px solid transparent;
 }
 .event-title:hover{
-    background: red;
+    background: red !important;
 }
