@@ -1,0 +1,19 @@
+#buttons-container{
+    display: flex;
+    justify-content: center;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    width: 80%;
+
+}
+
+#progress {
+    margin: 0 auto;
+
+    width: 80%;
+}
