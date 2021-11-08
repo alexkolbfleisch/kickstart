@@ -8,7 +8,7 @@ import { NgbProgressbarConfig } from '@ng-bootstrap/ng-bootstrap';
   providers: [NgbProgressbarConfig],
 })
 export class ProgressbarComponent implements OnInit {
-  _value: number = 0;
+  _value?: any = 0;
   _topics: String[] = [];
   _numTopics: number = 0;
 
@@ -21,12 +21,23 @@ export class ProgressbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this._value = this.getLocalStorage("progressbarValue") != null ? this.getLocalStorage("progressbarValue") : 0;
+     
     this._topics = ["Start","Java","Business","HTML", "CSS","DB", "Python", "Bias","Ende"];
     this._numTopics = this._topics.length-1.1;
   }
 
   fillProgress(fill: number){
     this._value =  fill;
+    this.upadateValue();
+  }
+
+  upadateValue() {
+    localStorage.setItem("progressbarValue", this._value.toString());
+  }
+
+  getLocalStorage(name: string){
+    return localStorage.getItem(name);
   }
 
 }
