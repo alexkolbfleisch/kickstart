@@ -9,6 +9,6 @@
     padding: 5px;
     border: 1.5px solid transparent;
 }
-.test {
-    width: 100%;
+.event-title:hover{
+    background: red;
 }

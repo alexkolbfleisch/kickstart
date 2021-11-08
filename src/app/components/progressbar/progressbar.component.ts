@@ -21,8 +21,8 @@ export class ProgressbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this._topics = ["","Start","Java","Business","HTML", "CSS","DB", "Ende",""];
-    this._numTopics = this._topics.length+2;
+    this._topics = ["Start","Java","Business","HTML", "CSS","DB", "Python", "Bias","Ende"];
+    this._numTopics = this._topics.length-1.1;
   }
 
   fillProgress(fill: number){
