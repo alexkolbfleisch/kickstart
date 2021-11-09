@@ -36,21 +36,12 @@ getAuth() {
   const headers = {"Content-Type": "application/json","Access-Control-Allow-Origin" : "*"};
   const pw = { pw:"MyAdmin2021" };
 
-  //this.http.options<any>('https://9xv557dk36.execute-api.eu-central-1.amazonaws.com/default/logIn-py');
-  return this.http.post<any>('https://9xv557dk36.execute-api.eu-central-1.amazonaws.com/default/logIn-py',(pw) ,httpOptions ).subscribe(data => {
+  //this.http.options<any>('https://44xocdu788.execute-api.eu-central-1.amazonaws.com/default/logIn-py);
+  return this.http.post<any>('https://44xocdu788.execute-api.eu-central-1.amazonaws.com/default/logIn-py',(pw) ,httpOptions ).subscribe(data => {
       this.auth = JSON.stringify(data);
   });
 }
 
-test(): Observable<any> {
-  const httpOptions = {
-    headers: new HttpHeaders({
-      'Content-Type':  'application/json'
-    })
-  };
-  const headers = {"Content-Type": "application/json","Access-Control-Allow-Origin" : "*"};
-  const pw = { pw:"MyAdmin2021" };
-  return this.http.post('https://9xv557dk36.execute-api.eu-central-1.amazonaws.com/default/logIn-py', pw);
-}
+
 
 }

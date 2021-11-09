@@ -11,6 +11,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProgressbarComponent } from './components/progressbar/progressbar.component';
 import { PasswordComponent } from './components/password/password.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,6 @@ import { PasswordComponent } from './components/password/password.component';
     BrowserModule,
     NgbModule, 
     CommonModule,
-    HttpClientModule,
     CalendarModule.forRoot({
       provide: DateAdapter,
       useFactory: adapterFactory,
