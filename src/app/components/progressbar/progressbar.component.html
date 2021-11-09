@@ -7,11 +7,11 @@
         <div (click)="fillProgress(i)" class="content" *ngFor="let topic of _topics, let i = index, let count = count">
             <div *ngIf="i == _value" class="content-p">
                 <p [ngStyle]="{ 'border-color': '#a600ff', 'background-color': '#a600ff', 'color': 'white', 'transform' : 'scale(1.1)'}" class="icons">{{i}} </p>
-                <p>{{topic}}</p>
+                <p class="p text-primary">{{topic}}</p>
             </div>
             <div *ngIf="i != _value" class="content-p">
-                <p [ngStyle]=" i <= _value && { 'border-color': '#a600ff'} || {'border-color': '#e9ecef'}" class="icons">{{i}} </p>
-                <p>{{topic}}</p>
+                <p  [ngStyle]=" i <= _value && { 'border-color': '#a600ff'} || {'border-color': '#e9ecef'}" class="icons">{{i}} </p>
+                <p class="p text-primary">{{topic}}</p>
             </div>
         </div>
     </div>

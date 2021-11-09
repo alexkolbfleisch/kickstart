@@ -46,3 +46,19 @@ p {
     margin: 0 auto;
     width: 70%;
 }
+
+@media screen and (max-width: 600px) {
+    .text-primary {
+        font-size: 10px;
+    }
+    #buttons {
+        top: 18px;
+    }
+    .icons{
+        margin: .5rem 0;
+        padding: .4rem;
+        width: 25px;
+        height: 25px;
+        font-size: 8px;
+    }
+}
