@@ -20,8 +20,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AdminuiFullComponent } from './components/adminui/adminui-full/adminui-full.component';
 
 const routes: Routes = [
-  {path: '', component: PasswordComponent},
-  {path: 'calendar', component: CalendarComponent}
+  {path: '', component: HomepageComponent},
+  {path: 'calendar', component: CalendarComponent},
+  {path: 'contact', component: ContactComponent},
+  {path: 'admin', component: AdminuiFullComponent}
 ]
 
 @NgModule({
