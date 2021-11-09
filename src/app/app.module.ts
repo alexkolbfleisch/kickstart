@@ -10,6 +10,13 @@ import { CalendarComponent } from './components/calendar/calendar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProgressbarComponent } from './components/progressbar/progressbar.component';
 import { PasswordComponent } from './components/password/password.component';
+import { AdminCalenderComponent } from './components/adminui/admin-calender/admin-calender.component';
+import { AdminTrainerComponent } from './components/adminui/admin-trainer/admin-trainer.component';
+import { AdminTodoComponent } from './components/adminui/admin-todo/admin-todo.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { AdminuiFullComponent } from './components/adminui/adminui-full/adminui-full.component';
 
 
 @NgModule({
@@ -17,7 +24,14 @@ import { PasswordComponent } from './components/password/password.component';
     AppComponent,
     CalendarComponent,
     ProgressbarComponent,
-    PasswordComponent
+    PasswordComponent,
+    AdminCalenderComponent,
+    AdminTrainerComponent,
+    AdminTodoComponent,
+    HomepageComponent,
+    ContactComponent,
+    NavbarComponent,
+    AdminuiFullComponent
   ],
   imports: [
     BrowserModule,

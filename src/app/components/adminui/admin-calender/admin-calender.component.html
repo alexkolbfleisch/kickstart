@@ -1,0 +1,104 @@
+          
+          
+          
+          <div id="kalender" class="container tab-pane active "><!-- Termin Seite Admin  -->
+              <br>
+              <!--formular-->
+              <form class="">
+                  <div class="row mb-2" >
+  
+                    <div class="col-md-3 mb-2"><!--Datum-->
+                        <div class="input-group">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend2"><i class="bi bi-calendar3" style="color:rgb(114, 20, 202);"></i></span>
+                              </div>
+                            <input type="text" class="form-control" id="Date" placeholder="Datum" required>
+                        </div>
+                    </div>
+  
+                    <div class="col-md-3 mb-2"><!--Zeit-->
+                        <div class="input-group">
+                             <div class="input-group-prepend">
+                                <span class="input-group-text" ><i class="bi bi-clock" style="color:rgb(114, 20, 202);"></i></span>
+                             </div>
+                            <input type="text" class="form-control"  placeholder="Start; Ende"  required>
+                        </div>
+                    </div>
+  
+                    <div class="col-md-3 mb-2" ><!--Trainer-->
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" ><i class="bi bi-person-rolodex" style="color:rgb(114, 20, 202);"></i></span>
+                            </div>
+                          <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Trainer" aria-describedby="inputGroupPrepend2" required>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-2">
+                      <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend2" style="color:rgb(114, 20, 202);"><i class="bi bi-newspaper"></i></span>
+                          </div>
+                        <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Thema" aria-describedby="inputGroupPrepend2" required>
+                      </div>
+                  </div>  
+  
+                  </div>
+                  
+                    <div class="row text-center" ><!--Thema-->
+                      <div class="col"><!--Button-->
+                       
+                        
+                            <div >
+                              <button class="btn btn-primary " style="background-color: blueviolet; width:23%;" type="submit">Abschicken</button>   
+                            </div>
+                         
+                      
+                      </div>
+                        
+    
+                    </div>
+                     
+              
+              </form>
+  
+              <br><!--platzhalter-->
+              
+                  <!-- hier die Tabele, die ersten 2 Zeilen sind schon mit beispielen befüllt-->
+              <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Trainer</th>
+                      <th scope="col">Thema</th>
+                      <th scope="col">Tag</th>
+                      <th scope="col">Start</th>
+                      <th scope="col">Ende</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Leon Plumpe</th>
+                      <td>Java</td>
+                      <td>05.10</td>
+                      <td>9:00</td>
+                      <td>16:00</td>
+                      <td><button type="button" class="btn btn-light"><i class="bi bi-trash-fill" style="color:rgb(114, 20, 202);"></i></button></td>
+                      
+                    </tr>
+                    <tr>
+                      <th scope="row">Armin Schleiter</th>
+                      <td>HTML</td>
+                      <td>16.10</td>
+                      <td>13:00</td>
+                      <td>16:00</td>
+                      <td><button type="button" class="btn btn-light"><i class="bi bi-trash-fill" style="color:rgb(114, 20, 202);"></i></button></td>
+                    </tr>
+                  </tbody>
+              </table>
+            
+            </div>
+
+    
+   
+

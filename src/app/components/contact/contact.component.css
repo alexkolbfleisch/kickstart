@@ -1,0 +1,46 @@
+#b1{
+    box-shadow: 10px 20px 15px silver;
+	border-radius: 20px;
+    background-color: #a055f5;
+}
+
+#b2{
+    background-color: #a055f5;
+    height: 100px;
+    position: relative;
+    top: -95px;
+}
+
+table{
+    position: relative;
+    top: -190px;
+    color: #ffffff;
+}
+
+th, td{
+    width: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#r1{
+    max-height: 20px;
+}
+
+#back{
+    background-color:#a055f5;
+    border-width: inherit;
+    box-shadow: 10px 20px 15px silver;
+	border-radius: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#logo-container img {
+    width: 100%;
+    height: auto;
+}
+
+span{
+    color: #ffffff;
+}

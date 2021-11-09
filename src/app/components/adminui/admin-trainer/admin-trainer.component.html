@@ -1,0 +1,136 @@
+<div id="trainer" class="container tab-pane active "><!-- Trainer verwaltung Admin  -->
+    <br>
+    <form class="">
+      <div class="row" >
+
+        <div class="col-md-4 mb-3"><!--Vorname-->
+          <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupPrepend2"><i class="bi bi-file-earmark-person"style="color:rgb(114, 20, 202);"></i></span>
+              </div>
+              <input type="text" class="form-control" id="first_name" placeholder="Vorname" required>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3"><!--Nachname-->
+          <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" ><i class="bi bi-file-earmark-person-fill"style="color:rgb(114, 20, 202);"></i></span>
+              </div>
+              <input type="text" class="form-control"  placeholder="Nachname"  required>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3" ><!--Position-->
+          <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" ><i class="bi bi-signpost-2-fill" style="color:rgb(114, 20, 202);"></i></span>
+              </div>
+              <input type="text" class="form-control" id="position" placeholder="Position" aria-describedby="inputGroupPrepend2" required>
+            </div>
+        </div>
+      </div>
+
+          <div class="row">
+              <div class="col-md-4 mb-3"><!--email-->
+              <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend2" style="color:rgb(114, 20, 202);"><i class="bi bi-envelope-fill"></i></span>
+                  </div>
+                  <input type="text" class="form-control" id="email" placeholder="E-mail" aria-describedby="inputGroupPrepend2" required>
+                </div>
+              </div> 
+
+              <div class="col-md-4 mb-3"><!--Telefon-->
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupPrepend2"><i class="bi bi-telephone-fill" style="color:rgb(114, 20, 202);"></i></span>
+                    </div>
+                    <input type="text" class="form-control" id="fone" placeholder="Telefonnummer" >
+                  </div>
+              </div> 
+
+              <div class="col-md-4 mb-3"><!--linkedIn-->
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupPrepend2"><i class="bi bi-linkedin" style="color:rgb(114, 20, 202);"></i></span>
+                    </div>
+                    <input type="text" class="form-control" id="linkedIn" placeholder="LinkedIn " >
+                  </div>
+              </div>
+
+              
+          </div>
+          <div class="row">
+
+            <div class="col-md-4 mb-3"><!--Thenanbereich-->
+              <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend2"><i class="bi bi-bookmarks-fill" style="color:rgb(114, 20, 202);"></i></span>
+                  </div>
+                  <input type="text" class="form-control" id="theme" placeholder="Thema" required>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3"><!--über den trainer-->
+              <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend2"><i class="bi bi-info-square" style="color:rgb(114, 20, 202);"></i></span>
+                  </div>
+                  <input type="text" class="form-control" id="trainerInfo" placeholder="Trainer info" >
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-3 text-center"><!--Button-->
+              <div>
+                  <div>
+                    <button class="btn btn-primary" style="background-color: blueviolet; width: 100%;" type="submit" >Abschicken</button>
+                  </div>
+                </div>
+            </div>
+
+
+          </div>
+
+           
+        
+    </form>
+
+      <br><!--platzhalter-->
+      
+          <!-- hier die Tabele, die ersten 2 Zeilen sind schon mit beispielen befüllt-->
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Vorname</th>
+              <th scope="col">Nachname</th>
+              <th scope="col">Email</th>
+              <th scope="col">Telefon</th>
+              <th scope="col">Position</th>
+              <th scope="col">Thema</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Leon</th>
+              <td>Plumpe</td>
+              <td>leon.plumpe@accenture.com</td>
+              <td>0800 666 333</td>
+              <td>Dualer Student</td>
+              <td>Java</td>
+              <td><button type="button" class="btn btn-light"><i class="bi bi-trash-fill" style="color:rgb(114, 20, 202);"></i></button></td>
+              
+            </tr>
+            <tr>
+              <th scope="row">Lucas</th>
+              <td>Plumpe</td>
+              <td>Lucas.plumpe@accenture.com</td>
+              <td>0800 999 444</td>
+              <td>Dualer Student</td>
+              <td>HTML</td>
+              <td><button type="button" class="btn btn-light"><i class="bi bi-trash-fill" style="color:rgb(114, 20, 202);"></i></button></td>
+              </tr>
+          </tbody>
+        </table>
+</div>
