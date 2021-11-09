@@ -44,13 +44,13 @@ export class CalendarComponent implements OnInit {
       end: new Date("Sat Nov 06 2021 13:59:59 GMT+0100 (Central European Standard Time)"),
       meta: this.obj, 
       color: this.colorsMain,
-      trainer: true,
+
     },
     {
       start: new Date("Sat Nov 06 2021 14:59:59 GMT+0100 (Central European Standard Time)"),
       title: 'Second event',
       meta: this.obj,
-      trainer: false,
+
       color: this.colorsTrainer,
     },
 

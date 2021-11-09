@@ -12,12 +12,19 @@
     position: absolute;
     top: 7px;
 }
-.content {
+
+.contents{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
+.content-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 p {
     text-align: center;
 }
