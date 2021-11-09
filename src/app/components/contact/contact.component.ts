@@ -11,8 +11,6 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  goback(){
-    window.history.back();
-  }
+  
 
 }
