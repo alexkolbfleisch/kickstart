@@ -1,33 +1,33 @@
-<app-navbar></app-navbar>
+<div
+    style="background-image:url(../../../../assets/images/admin/background-admin.png); height: 100vh; background-size: cover;">
+    <app-navbar></app-navbar>
+    <div class="container">
+        <div class="card border-0 shadow my-5">
 
-<div style="background-image:url(BackgroundAdmin.jpg); height: 100vh; background-size: cover;">
- <div class="container">
-  <div class="card border-0 shadow my-5">
 
-    
 
-    <ul ngbNav #nav="ngbNav" class="nav-tabs">
-    <li ngbNavItem>
-      <a ngbNavLink>Kalender</a>
-      <ng-template ngbNavContent>
-          <app-admin-calender></app-admin-calender>
-      </ng-template>
-    </li>
-    <li ngbNavItem>
-        <a ngbNavLink>Trainer</a>
-        <ng-template ngbNavContent>
-            <app-admin-trainer></app-admin-trainer>
-        </ng-template>
-    </li>
-    <li ngbNavItem>
-        <a ngbNavLink>To Do</a>
-        <ng-template ngbNavContent>
-            <app-admin-todo></app-admin-todo>
-        </ng-template>
-    </li>
-    </ul>
-<div [ngbNavOutlet]="nav"></div>
+            <ul ngbNav #nav="ngbNav" class="nav-tabs">
+                <li ngbNavItem>
+                    <a ngbNavLink>Kalender</a>
+                    <ng-template ngbNavContent>
+                        <app-admin-calender></app-admin-calender>
+                    </ng-template>
+                </li>
+                <li ngbNavItem>
+                    <a ngbNavLink>Trainer</a>
+                    <ng-template ngbNavContent>
+                        <app-admin-trainer></app-admin-trainer>
+                    </ng-template>
+                </li>
+                <li ngbNavItem>
+                    <a ngbNavLink>To Do</a>
+                    <ng-template ngbNavContent>
+                        <app-admin-todo></app-admin-todo>
+                    </ng-template>
+                </li>
+            </ul>
+            <div [ngbNavOutlet]="nav"></div>
 
-</div>
-</div>
+        </div>
+    </div>
 </div>
