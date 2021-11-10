@@ -6,6 +6,7 @@ import { Training } from 'src/app/model/Training';
 
 import { EventColor } from 'calendar-utils';
 import { PostTrainingService } from 'src/app/services/training/post-training.service';
+
 import { Trainer } from 'src/app/model/Trainer';
 import { CalendarEventActionsComponent } from 'angular-calendar/modules/common/calendar-event-actions.component';
 
@@ -35,7 +36,7 @@ export class CalendarComponent implements OnInit {
   constructor(private postTrainingService: PostTrainingService) { }
 
   ngOnInit(): void {
-    console.log(endOfDay(new Date()));
+
     this.getPosts();
   }
   setView(view: CalendarView) {
@@ -106,7 +107,6 @@ export class CalendarComponent implements OnInit {
           console.log(this.training);
           this.formatTraining();
           this.setView(CalendarView.Month);
-          console.log("test");
       
         },
         error => {
