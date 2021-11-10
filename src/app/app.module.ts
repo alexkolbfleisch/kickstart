@@ -18,12 +18,15 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AdminuiFullComponent } from './components/adminui/adminui-full/adminui-full.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
-  {path: '', component: HomepageComponent},
+  {path: '', component: LoginComponent},
+  {path: 'home', component: HomepageComponent},
   {path: 'calendar', component: CalendarComponent},
   {path: 'contact', component: ContactComponent},
-  {path: 'admin', component: AdminuiFullComponent}
+  {path: 'admin', component: AdminuiFullComponent},
+  {path: 'progress', component: ProgressbarComponent}
 ]
 
 @NgModule({
@@ -38,7 +41,8 @@ const routes: Routes = [
     HomepageComponent,
     ContactComponent,
     NavbarComponent,
-    AdminuiFullComponent
+    AdminuiFullComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
