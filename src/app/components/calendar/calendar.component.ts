@@ -65,7 +65,7 @@ export class CalendarComponent implements OnInit {
   }
 
   eventClicked({ event, sourceEvent }: { event: CalendarEvent; sourceEvent:any }): void{
-    console.log(event.meta['name']);
+    console.log(event.title);
   }
 
   setViewDate(date: any){

@@ -1,11 +1,11 @@
 export class Trainer {
-    trainerId?: number;
-    firstName?: string;
-    lastName?: string;
-    jobTitle?: string;
+    trainer_id?: number;
+    first_name?: string;
+    last_name?: string;
+    job_title?: string;
     email?: string;
     telephone?: number;
-    linkedInLink?: string;
-    profilcePic?: string;
+    linkedIn_link?: string;
+    profile_pic?: string;
     topics?: string;
 }

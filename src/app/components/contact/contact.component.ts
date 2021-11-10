@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 
 @Component({
@@ -7,6 +7,10 @@ import { Location } from '@angular/common';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+
+ @Input() trainer: string = "";
+ first_name: string = "";
+ last_name: string = "";
 
   constructor(
     private location: Location) { }

@@ -19,7 +19,7 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AdminuiFullComponent } from './components/adminui/adminui-full/adminui-full.component';
-import { LoginComponent } from './components/login/login.component';
+import { LoginComponent } from './components/login/login.component';  
 
 const routes: Routes = [
   {path: '', component: LoginComponent},
