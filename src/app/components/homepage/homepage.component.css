@@ -34,7 +34,7 @@ body{ margin: 0;
 }
 .fullscreen-video-wrap video{
 	min-height: 100%;
-	min-width: 100%;
+	max-width: 100%;
 	
 }
 
@@ -53,6 +53,9 @@ body{ margin: 0;
 	z-index: 2;
 	margin-top:20%;
 	padding: 0 5rem;
+	/*justify-content: center;
+	display: flex;
+	align-items: center;*/
 	
 }
 
@@ -71,6 +74,10 @@ body{ margin: 0;
 .my-btn{
 	padding: 1rem 1rem;
 }
+
+.Arrow{
+	color: white;}
+
 
 @media(max-width:768px){
 	.header-content h1{font-size: 40px;}
@@ -112,14 +119,14 @@ bodytesti {
   border-radius: 50%;
 }
 
-.Karten{
-	display: flex;
+#Karten{
 	padding-bottom: 60px;
 }
 .berichte {
 	background: linear-gradient(to right, #a100ff, #510074) !important;
 	color: white;
 	padding-left: 20px;
+	padding-top: 20px;
 }
 
 
