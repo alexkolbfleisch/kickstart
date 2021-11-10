@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
+import { Trainer } from 'src/app/model/Trainer';
 
 @Component({
   selector: 'app-contact',
@@ -8,7 +9,7 @@ import { Location } from '@angular/common';
 })
 export class ContactComponent implements OnInit {
 
- @Input() trainer: string = "";
+ @Input() trainer: any;
  first_name: string = "";
  last_name: string = "";
 
@@ -16,6 +17,7 @@ export class ContactComponent implements OnInit {
     private location: Location) { }
 
   ngOnInit(): void {
+    console.log(this.trainer);
   }
   
   goBack(): void {

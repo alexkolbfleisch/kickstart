@@ -3,7 +3,7 @@ import { endOfDay, startOfDay } from 'date-fns';
 import { CalendarView , CalendarEvent} from 'angular-calendar';
 import { PostTrainerService } from 'src/app/services/trainer/post-trainer.service';
 import { Training } from 'src/app/model/Training';
-
+import { Router } from '@angular/router';
 import { EventColor } from 'calendar-utils';
 import { PostTrainingService } from 'src/app/services/training/post-training.service';
 
@@ -20,6 +20,7 @@ export class CalendarComponent implements OnInit {
   view: CalendarView = CalendarView.Month;
   CalendarView = CalendarView;
   training?: Training[];
+  trainer?: Trainer;
   calendarEvents: CalendarEvent[] = [];
   eventObj?: any;
   
@@ -33,7 +34,7 @@ export class CalendarComponent implements OnInit {
     secondary: "#A100FF"
   } 
    
-  constructor(private postTrainingService: PostTrainingService) { }
+  constructor(private postTrainingService: PostTrainingService , private postTrainerService: PostTrainerService, private router: Router) { }
 
   ngOnInit(): void {
 
@@ -42,30 +43,18 @@ export class CalendarComponent implements OnInit {
   setView(view: CalendarView) {
     this.view = view;
   }
-  events: CalendarEvent[] =  [
-    {
-      start: new Date("Sat Nov 06 2021 12:59:59 GMT+0100 (Central European Standard Time)"),
-      title: 'First event',
-      end: new Date("Sat Nov 06 2021 13:59:59 GMT+0100 (Central European Standard Time)"),
-      meta: this.eventObj, 
-      color: this.colorsMain,
-
-    },
-    {
-      start: new Date("Sat Nov 06 2021 14:59:59 GMT+0100 (Central European Standard Time)"),
-      title: 'Second event',
-      meta: this.eventObj,
-      color: this.colorsTrainer,
-    },
-
-  ]
+  
 
   dayClicked({ date, events }: { date: Date; events: CalendarEvent[] }): void {    
     console.log(events);
   }
 
   eventClicked({ event, sourceEvent }: { event: CalendarEvent; sourceEvent:any }): void{
-    console.log(event.title);
+    console.log(event.meta);
+    this.router.navigate(['/contact/'], {
+      queryParams: { trainer: event.meta }
+    });
+    console.log(event.meta);
   }
 
   setViewDate(date: any){
@@ -85,13 +74,22 @@ export class CalendarComponent implements OnInit {
   formatTraining() {
     if(this.training != null){
       for(let post of this.training){
-        this.eventObj = {start: new Date(), end: new Date(),title: "",meta: ""};
-        console.log(post.training_date);
+        this.eventObj = {start: new Date(), end: new Date(),title: "",meta: -1};
+
         this.eventObj.title = post.topic;
         let start = new Date(post.training_date + "T" + post.start_time);
         let end = new Date(post.training_date + "T" + post.end_time);
         this.eventObj.start = start;
         this.eventObj.end = end;
+        if(post.trainerID != null) {
+          this.getTrainerByID(post.trainerID.toString());
+          console.log("trainer");
+          this.eventObj.meta = this.trainer;
+        }else {
+          console.log("no trainer")
+        }
+        
+      
         this.calendarEvents.push(this.eventObj);
       }
     }
@@ -114,6 +112,16 @@ export class CalendarComponent implements OnInit {
         });
   }
 
-  
-  
+  getTrainerByID(id: string): void {
+    this.postTrainerService.get(id)
+      .subscribe(
+        data => {
+          this.trainer = data;
+          console.log(this.trainer);
+      
+        },
+        error => {
+          console.error(error);
+        });
+  }
 }

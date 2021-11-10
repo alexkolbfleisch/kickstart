@@ -44,7 +44,7 @@
       >
       <div *ngFor="let event of day.events.sort(this.compareDate)" >
 
-        <div placement="top" ngbPopover="DATEN!" popoverTitle="{{ event.title }}" #popover="ngbPopover" [openDelay]="300" [closeDelay]="500" triggers="mouseenter:mouseleave">
+        <div placement="top"  ngbPopover="DATEN!" popoverTitle="{{ event.title }}" #popover="ngbPopover" [openDelay]="300" [closeDelay]="500" triggers="mouseenter:mouseleave">
             <p aria-hidden="true" class="event-title" id="test"  [ngStyle]= "event.trainer == false && {'background-color':colorsMain.secondary, 'border-color':  colorsMain.primary} || {'background-color': colorsTrainer.secondary, 'border': colorsTrainer.primary}"> {{ event.title }} </p>
         </div>
 

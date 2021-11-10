@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Trainer } from '../../model/Trainer';
 
-const baseUrl = "";
+const baseUrl = "http://ec2-3-68-104-172.eu-central-1.compute.amazonaws.com:8100/api/trainer";
 
 @Injectable({
   providedIn: 'root'
