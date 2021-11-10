@@ -34,6 +34,7 @@ export class CalendarComponent implements OnInit {
 
   ngOnInit(): void {
     console.log(endOfDay(new Date()));
+    this.getPosts();
   }
   setView(view: CalendarView) {
     this.view = view;
@@ -84,6 +85,7 @@ export class CalendarComponent implements OnInit {
       .subscribe(
         data => {
           this.events = data;
+          console.log(data);
         },
         error => {
           console.error(error);
