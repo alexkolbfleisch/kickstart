@@ -1,8 +1,8 @@
 export class Training {
-    id?: number;
+    trainingID?: number;
     topic?: string;
-    startTime?: string;
-    endTime?: string;
-    trainingDate?: string;
-    trainer?: number;
+    start_time?: string;
+    end_time?: string;
+    training_date?: string;
+    trainerID?: number;
 }
