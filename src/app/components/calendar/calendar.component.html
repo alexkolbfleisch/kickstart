@@ -43,7 +43,7 @@
         >{{ day.date | calendarDate:'monthViewDayNumber':locale }}</span
       >
       <div *ngFor="let event of day.events.sort(this.compareDate)" >
-        <p aria-hidden="true" class="event-title"  [ngStyle]= "event.trainer == false && {'background-color':colorsMain.secondary, 'border-color':  colorsMain.primary} || {'background-color': colorsTrainer.secondary, 'border': colorsTrainer.primary}"> {{ event.title }} </p>
+        <p aria-hidden="true" class="event-title" id="test"  [ngStyle]= "event.trainer == false && {'background-color':colorsMain.secondary, 'border-color':  colorsMain.primary} || {'background-color': colorsTrainer.secondary, 'border': colorsTrainer.primary}"> {{ event.title }} </p>
       </div>
      
     </div>
